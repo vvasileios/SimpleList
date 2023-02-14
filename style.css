@@ -1,3 +1,18 @@
+body {
+  margin: 0;
+	padding: 0;
+	background-color: #2185f6;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .done {
   text-decoration: line-through;
 }
