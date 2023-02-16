@@ -4,6 +4,19 @@ body {
 	background-color: #2185f6;
 }
 
+.wrap {
+	text-align: center;
+}
+
+#app {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#first {
+	margin-bottom: 50px;
+}
+
 ul {
 	list-style-type: none;
 	padding-left: 0;
