@@ -1,31 +1,89 @@
+:root {
+	--dark: #374151;
+	--darker: #1F2937;
+	--darkest: #111827;
+	--gray: #6B7280;
+	--light: #EEE;
+	--pink: #EC4899;
+	--purple: #8b5cf6;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Fira sans', sans-serif;
+}
+
 body {
-  margin: 0;
-	padding: 0;
-	background-color: #2185f6;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background: var(--dark);
+	color: #FFF;
 }
 
-.wrap {
-	text-align: center;
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
 }
 
-#app {
-	margin-top: 50px;
-	margin-bottom: 50px;
+header h1 {
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--gray);
+	margin-bottom: 1rem;
 }
 
-#first {
-	margin-bottom: 50px;
+#new-task-form {
+	display: flex;
 }
 
-ul {
-	list-style-type: none;
-	padding-left: 0;
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
 }
 
-button:hover {
-  cursor: pointer;
+#new-task-input {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
 }
 
-.done {
-  text-decoration: line-through;
+#new-task-input::placeholder {
+	color: var(--gray);
+}
+
+#new-task-submit {
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
 }
